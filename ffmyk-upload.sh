@@ -20,7 +20,7 @@ chmod 774 sync
 
 #Mind the keys...
 rsync -avzPe 'ssh ' --delete ./ buildbot@****:/srv/http/ff$1/nightly/$2/
-#ssh buildbot@**** 'date > /tmp/ffmyk-sync-NORMAL ; chmod 777 /tmp/ffmyk-sync-NORMAL'
+ssh buildbot@**** 'date > /tmp/ffmyk-sync-NORMAL ; chmod 777 /tmp/ffmyk-sync-NORMAL'
 
 popd
 
